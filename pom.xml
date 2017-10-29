@@ -45,19 +45,19 @@
 		<dependency>
 			<groupId>cn.aofeng</groupId>
 			<artifactId>common4j</artifactId>
-			<version>0.2.2</version>
+			<version>0.3.0</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.7.22</version>
+			<version>1.6.1</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.22</version>
+			<version>1.6.1</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>

@@ -20,7 +20,7 @@ import cn.aofeng.common4j.xml.NodeParser;
  */
 public class ThreadPoolConfig implements ILifeCycle {
 
-    public final static String DEFAULT_CONFIG_FILE = "/biz/threadpool4j.xml";
+    public final static String DEFAULT_CONFIG_FILE = "/threadpool4j.xml";
     protected String _configFile =DEFAULT_CONFIG_FILE;
     
     /**

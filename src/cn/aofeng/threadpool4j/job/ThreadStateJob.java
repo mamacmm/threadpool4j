@@ -28,9 +28,9 @@ public class ThreadStateJob extends AbstractJob {
         
         for (Entry<String, ThreadStateInfo> entry : statMap.entrySet()) {
             ThreadStateInfo stateInfo = entry.getValue();
-            _logger.info("ThreadGroup:{}, New:{},  Runnable:{}, Blocked:{}, Waiting:{}, TimedWaiting:{}, Terminated:{}", 
-                    entry.getKey(), stateInfo.getNewCount(), stateInfo.getRunnableCount(), stateInfo.getBlockedCount(),
-                    stateInfo.getWaitingCount(), stateInfo.getTimedWaitingCount(), stateInfo.getTerminatedCount());
+            _logger.info("ThreadGroup:{"+entry.getKey()+"}, New:{"+stateInfo.getNewCount()+"},  Runnable:{"+
+                            stateInfo.getRunnableCount()+"}, Blocked:{"+stateInfo.getBlockedCount()+"}, Waiting:{"+
+                            stateInfo.getWaitingCount()+"}, TimedWaiting:{"+stateInfo.getTimedWaitingCount()+"}, Terminated:{"+stateInfo.getTerminatedCount()+"}");
         }
         
         super.sleep();

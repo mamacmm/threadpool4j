@@ -30,8 +30,8 @@ public class ThreadPoolStateJob extends AbstractJob {
         Set<Entry<String, ExecutorService>> poolSet = _multiThreadPool.entrySet();
         for (Entry<String, ExecutorService> entry : poolSet) {
             ThreadPoolExecutor pool = (ThreadPoolExecutor) entry.getValue();
-            _logger.info("ThreadPool:{}, ActiveThread:{}, TotalTask:{}, CompletedTask:{}, Queue:{}", 
-                    entry.getKey(), pool.getActiveCount(), pool.getTaskCount(), pool.getCompletedTaskCount(), pool.getQueue().size());
+            _logger.info("ThreadPool:{"+entry.getKey()+"}, ActiveThread:{"+pool.getActiveCount()+"}, TotalTask:{"+pool.getTaskCount()
+                            +"}, CompletedTask:{"+pool.getCompletedTaskCount()+"}, Queue:{"+pool.getQueue().size()+"}");
         }
         
         super.sleep();
